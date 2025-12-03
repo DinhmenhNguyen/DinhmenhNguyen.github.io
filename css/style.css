@@ -1,0 +1,154 @@
+body {
+    background-color: #111114;
+    font-family: "Montserrat";
+    margin: 0px;
+    height: 100vh;
+    color: white;
+}
+
+header {
+    display: flex;
+    background-color: #0D0D0F;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2vh;
+    outline: solid 1px gray;
+}
+
+header h1 {
+    font-size: 100%;
+}
+
+ul {
+    display: flex;
+    gap: 2vw;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: unset;
+    color: white;
+}
+
+.blue-star {
+    width: 50px;
+    height: 50px;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 10vw;
+    top: 15vh;
+    font-weight: 100;
+}
+
+.hello-im-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -10px;
+}
+
+.star h2 {
+    width: 100%;
+    font-weight: 400;
+}
+
+.name-container {
+    font-size: 120%;
+}
+
+.name-container h1 {
+    font-size: 250%;
+    margin: 0px;
+}
+
+.view-my-work {
+    background: linear-gradient(80deg, rgba(92, 141, 255, 1) 0%, rgba(145, 10, 255, 1) 50%, rgba(187, 0, 255, 1) 100%);
+    color: white;
+    border: unset;
+}
+
+.get-in-touch {
+    background: none;
+    color: white;
+    border: unset;
+    outline: solid 1px gray;
+}
+
+.landing-page-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.landing-page-buttons button {
+    padding: 1.5vh 1.5vw;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.about-me-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 60%;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center     ;
+    position: relative;
+    top: 400px;
+}
+
+.about-me-title {
+    font-weight: 400;
+    font-size: 5vh;
+}
+
+.about-me-blocks {
+    display: flex;
+    gap: 1vw;
+}
+
+.about-me-blocks h1 {
+    font-weight: 200;
+    font-size: 100%;
+}
+
+.about-me-blocks h2 {
+    font-weight: 200;
+    font-size: 110%;
+    margin: 0px;
+}
+
+.block img {
+    width: 40px;
+    height: 40px;
+}
+
+.block {
+    display: flex;
+    background-color: #1A1A1A;
+    outline: solid 1px #303030;
+    flex-direction: column;
+    padding: 15px;
+    width: 175px;
+    height: auto;
+    border-radius: 10px;
+}
