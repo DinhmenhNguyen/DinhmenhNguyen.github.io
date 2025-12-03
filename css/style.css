@@ -6,14 +6,12 @@ body {
     color: white;
 }
 
-header {
-    display: flex;
-    background-color: #0D0D0F;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 2vh;
-    outline: solid 1px gray;
+@media only screen and (max-width: 600px) {
+    nav {
+        all: unset;
+    }
 }
+
 
 header h1 {
     font-size: 100%;
@@ -31,6 +29,17 @@ li {
 a {
     text-decoration: unset;
     color: white;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #0D0D0F;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    outline: solid 1px gray;
 }
 
 .blue-star {
@@ -111,7 +120,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center     ;
+    align-items: center;
     position: relative;
     top: 400px;
 }
