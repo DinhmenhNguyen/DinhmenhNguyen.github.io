@@ -3,88 +3,204 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header class="sticky">
-        <h1>Home</h1>
+
+    <header>
+        <h1 class="initials-header">DN</h1>
         <nav>
-            <ul>
+            <ul class="links-header">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#landing-page-id">Home</a>
                 </li>
                 <li>
-                    <a href="#">About me</a>
+                    <a href="#about-me-id">About me</a>
                 </li>
                 <li>
-                    <a href="#">Work</a>
+                    <a href="#selected-work-id">Work</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact-id">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="landing-page">
-            <div class="hello-im-container">
-                <div class="star">
+        <section id="landing-page-id" class="landing-page">
+            <div class="introduction-container">
+                <div class="introduction-container1">
                     <img class="blue-star" src="Images/Blue-Star.png">
-                    <h2>Hello, I'm</h2>
-                </div>
-                <div class="name-container">
-                    <h1>Dinhmenh Nguyen</h1>
-                    <p>Creative developer & designer crafting digital experiences</p>
-                </div>
-            </div>
-            <div class="landing-page-buttons">
-                <div>
-                    <button class="view-my-work">View my work</button>
+                    <h2 class="hello-im">Hello, I'm</h2>
                 </div>
                 <div>
-                    <button class="get-in-touch">Get in touch →</button>
+                    <h1 class="introductie-naam">Dinhmenh Nguyen</h1>
+                    <p class="introductie-about-me">Software developer student & Piano musician </p>
+                </div>
+                <div class="landing-page-links">
+                    <div class="view-my-work">
+                        <a href="#selected-work-id">View my work</a>
+                    </div>
+                    <div class="get-in-touch">
+                        <a href="#contact-id">Get in touch ➔</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section2">
-            <div class="about-me-container">
-                <h1 class="about-me-title">About me</h1>
-                <p>I'm a Software Developer student at the ROC Technovium, I love making web designs and working on a
-                    laptop and discover new things about the online world.</p>
-                <p>With better eyes for visuals and designs I often sync better into things about the looks and visuals,
-                    Besides working on projects and websites, I also have a part-time job and go to the gym.
-                </p>
+        <section id="about-me-id" class="about-me-page-container">
+            <div>
+                <div>
+                    <h1 class="about-me-title">About me</h1>
+                </div>
+                <div class="about-me-paragraph">
+                    <p>I'm a passionate developer with a keen eye for design and detail. I specialize in creating
+                        beautiful, functional web experiences that make a lasting impact.
+                    </p>
+                    <p>With expertise in modern web technologies and a creative approach to design, I help bring ideas
+                        to life through clean code and thoughtful user experiences.</p>
+                </div>
+                <div class="about-me-blocks">
+                    <div class="blocks">
+                        <div class="block">
+                            <img class="block-image" src="Images/art.png">
+                            <h1>Design</h1>
+                            <p>UI/UX</p>
+                        </div>
+                        <div class="block">
+                            <img class="block-image" src="Images/left-right.png">
+                            <h1>Development</h1>
+                            <p>HTML CSS</p>
+                        </div>
+                    </div>
+                    <div class="blocks">
+                        <div class="block">
+                            <img class="block-image" src="Images/lightning.png">
+                            <h1>Tools</h1>
+                            <p>Figma</p>
+                        </div>
+                        <div class="block">
+                            <img class="block-image" src="Images/user.png">
+                            <h1>Other</h1>
+                            <p>UI/UX</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="about-me-blocks">
-                <div class="block design">
-                    <img src="Images/art.png">
-                    <h1>Design</h1>
-                    <h2>UI/UX</h2>
+        </section>
+
+        <section id="selected-work-id" class="selected-work-section">
+            <div>
+                <h1 class="selected-work-title">Selected work</h1>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Skills')">London</button>
+                    <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+                    <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
                 </div>
-                <div class="block design">
-                    <img src="Images/art.png">
-                    <h1>Design</h1>
-                    <h2>UI/UX</h2>
+
+                <div id="Skills" class="tabcontent">
+                    <div class="skills-tab">
+                        <div>
+                            <img class="skills-images" src="Images/front-end-icon.png">
+                            <h3 class="skills-subtitles">Front end</h3>
+                        </div>
+                        <div>
+                            <img class="skills-images" src="Images/front-end-icon.png">
+                            <h3 class="skills-subtitles">Front end</h3>
+                        </div>
+                        <div>
+                            <img class="skills-images" src="Images/front-end-icon.png">
+                            <h3 class="skills-subtitles">Front end</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="block design">
-                    <img src="Images/art.png">
-                    <h1>Design</h1>
-                    <h2>UI/UX</h2>
+
+                <div id="Experience" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
                 </div>
-                <div class="block design">
-                    <img src="Images/art.png">
-                    <h1>Design</h1>
-                    <h2>UI/UX</h2>
+
+                <div id="Projects" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <script>
+                    function openCity(evt, cityName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+
+                <div id="skills" class="tabcontent">
+                    <h3>Skills</h3>
+                    <p>html css,java</p>
+                </div>
+
+                <div id="experience" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="projects" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-id" class="contact-section">
+            <div>
+                <div>
+                    <h1 class="contact-title">Let's work together</h1>
+                    <p class="contact-paragraph">Have a project in mind? I'd love to hear about it. Get in touch and
+                        let's create something great.
+                    </p>
+                </div>
+                <div>
+                    <div class="contact-email-container">
+                        <img class="contact-images" src="Images/email.png">
+                        <h1>1213821@student.roc-nijmegen.nl</h1>
+                    </div>
+                    <div class="contact-links-container">
+                        <div>
+                            <a class="contact-links" href="">
+                                <img class="contact-images" src="Images/linkedin.png">
+                                <h1 class="contact-apps">LinkedIn</h1>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="contact-links" href="">
+                                <img class="contact-images" src="Images/github.png">
+                                <h1 class="contact-apps">Github</h1>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="contact-links" href="">
+                                <img class="contact-images" src="Images/twitter.png">
+                                <h1 class="contact-apps">Twitter</h1>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

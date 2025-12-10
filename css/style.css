@@ -1,163 +1,353 @@
+/*Html Tags*/
+
 body {
     background-color: #111114;
+    color: white;
     font-family: "Montserrat";
     margin: 0px;
-    height: 100vh;
-    color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    nav {
-        all: unset;
-    }
-}
-
-
-header h1 {
-    font-size: 100%;
-}
-
-ul {
+header {
     display: flex;
-    gap: 2vw;
+    align-items: center;
+    background-color: #0A0A0A;
+    outline: solid 1px #3B3B3B;
+    justify-content: space-between;
+    padding: 0px 5vw;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
 }
 
 li {
     list-style: none;
 }
 
-a {
-    text-decoration: unset;
-    color: white;
+ul {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0px;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    background-color: #0D0D0F;
-    z-index: 10;
+a {
+    color: white;
+    text-decoration: unset;
+}
+
+button {
+    background: none;
+    color: white;
+    border: none;
+}
+
+/*Html Tags*/
+
+/*Smooth scrolling*/
+
+.scroll {
+    scroll-behavior: smooth;
+}
+
+/*Smooth scrolling*/
+
+
+/*Header work*/
+
+.links-header {
+    display: flex;
+    gap: 3vw;
+    margin-left: 2vw;
+}
+
+/*Header work*/
+
+/*Landing page design*/
+
+.introduction-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 6vw;
+    height: 80vh;
+}
+
+.introduction-container1 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    outline: solid 1px gray;
-}
-
-.blue-star {
-    width: 50px;
-    height: 50px;
+    position: inherit;
+    bottom: 10px;
 }
 
 .landing-page {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin: 10vw;
-    top: 15vh;
-    font-weight: 100;
 }
 
-.hello-im-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.star {
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: -10px;
-}
-
-.star h2 {
-    width: 100%;
-    font-weight: 400;
-}
-
-.name-container {
-    font-size: 120%;
-}
-
-.name-container h1 {
-    font-size: 250%;
+.landing-page h2 {
     margin: 0px;
+}
+
+.introductie-naam {
+    display: flex;
+    font-size: 7vh;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.blue-star {
+    width: 35px;
+}
+
+.hello-im {
+    font-size: 15px;
+    font-weight: 400;
+    color: #51a0e0;
+}
+
+.introductie-about-me {
+    font-size: 25px;
 }
 
 .view-my-work {
     background: linear-gradient(80deg, rgba(92, 141, 255, 1) 0%, rgba(145, 10, 255, 1) 50%, rgba(187, 0, 255, 1) 100%);
-    color: white;
-    border: unset;
-}
-
-.get-in-touch {
-    background: none;
-    color: white;
-    border: unset;
-    outline: solid 1px gray;
-}
-
-.landing-page-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-}
-
-.landing-page-buttons button {
-    padding: 1.5vh 1.5vw;
-    font-size: medium;
+    padding: 20px 30px;
     border-radius: 10px;
 }
 
-.about-me-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 60%;
+.get-in-touch {
+    border: solid 1px #3B3B3B;
+    padding: 19px 29px;
+    border-radius: 10px;
 }
 
-.section2 {
+.landing-page-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Landing page design*/
+
+/*About me page design*/
+
+.about-me-page-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    margin: 0px 20vw;
     align-items: center;
-    position: relative;
-    top: 400px;
+    height: 100vh;
 }
 
 .about-me-title {
-    font-weight: 400;
-    font-size: 5vh;
+    font-size: 60px;
+    font-weight: 500;
+    color: #51a0e0;
+}
+
+.about-me-paragraph {
+    font-size: 17px;
 }
 
 .about-me-blocks {
     display: flex;
-    gap: 1vw;
+    justify-content: space-between;
 }
 
-.about-me-blocks h1 {
-    font-weight: 200;
-    font-size: 100%;
-}
-
-.about-me-blocks h2 {
-    font-weight: 200;
-    font-size: 110%;
-    margin: 0px;
-}
-
-.block img {
-    width: 40px;
-    height: 40px;
+.block-image {
+    width: 30px;
 }
 
 .block {
     display: flex;
-    background-color: #1A1A1A;
-    outline: solid 1px #303030;
+    width: 11.5vw;
+    padding: 15px 15px;
+    border: solid 1px #3B3B3B;
     flex-direction: column;
-    padding: 15px;
-    width: 175px;
-    height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
+.blocks {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.block h1 {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 7px 0px;
+}
+
+.block p {
+    font: 25px;
+    margin: 5px 0px;
+}
+
+/*About me page design*/
+
+/*Selected work design*/
+
+.selected-work-title {
+    font-size: 60px;
+    font-weight: 500;
+    color: #51a0e0;
+}
+
+.selected-work-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+}
+
+.skills-tab {
+    display: flex;
+}
+
+.skills-tab div {
+    overflow: hidden;
+    border: 1px solid #3B3B3B;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+}
+
+.skills {
+    display: flex;
+    gap: 1vw;
+}
+
+.skills-images {
+    width: 35px;
+}
+
+.skills-subtitles {
+    font-size: 20px;
+    font-weight: 500     ;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #3B3B3B;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+}
+
+.tablinks {
+    color: #B3B3B3;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 7px;
+    border-radius: 15px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    cursor: pointer;
+    width: 300px;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #242424;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background: linear-gradient(80deg, rgba(92, 141, 255, 1) 0%, rgba(145, 10, 255, 1) 50%, rgba(187, 0, 255, 1) 100%);
+}
+
+/*Selected work design*/
+
+/*Contact design*/
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact-title {
+    font-size: 60px;
+    font-weight: 500;
+    color: #51a0e0;
+}
+
+.contact-paragraph {
+    font-size: 20px;
+    max-width: 850px;
+}
+
+.contact-email-container {
+    display: flex;
+    align-items: center;
+    outline: solid 1px #3B3B3B;
+    background-color: #1A1A1A;
+    padding: 10px 20px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.contact-email-container h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact-images {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-apps {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1A1A1A;
+    width: 250px;
+    padding: 10px;
+    outline: solid 1px #3B3B3B;
+    border-radius: 15px;
+}
+
+.contact-links-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+
+/*Contact design*/
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 600px) {
+    .about-me-page-container {
+        margin: 0px 6vw;
+    }
+
+    .block {
+        width: 35vw;
+    }
+
+    .blocks {
+        flex-direction: column;
+    }
+}
+
+/*Media Queries*/
