@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function skills(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -11,3 +11,6 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".tablinks").click();
+});

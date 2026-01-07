@@ -1,27 +1,56 @@
-/*                    */
+/*         */
 /*Html Tags*/
-/*                    */
+/*         */
+
+/* Makes the scrolling snap to the next section */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100vh;
+    height: 100%;
+    margin: 0;
+}
+
+/* Stops the snap scroll at each section before going to the next */
+section {
+    scroll-snap-align: start;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
 
 body {
     background-color: #111114;
-    color: white;
     font-family: "Montserrat";
+    color: white;
     margin: 0px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: #0A0A0A;
-    outline: solid 1px #3B3B3B;
-    justify-content: space-between;
-    padding: 0px 5vw;
+main {
+    margin: 10vw;
+}
 
+/* Makes the header stay on the top of the screen and visible */
+header {
+    justify-content: space-between;
+    outline: solid 1px #3B3B3B;
+    background-color: #0A0A0A;
+    box-sizing: border-box;
+    align-items: center;
+    position: fixed;
+    padding: 0 5vw;
+    z-index: 1000;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 nav {
-    display: flex;
     flex-direction: row;
+    display: flex;
 }
 
 li {
@@ -29,14 +58,14 @@ li {
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
     padding-inline-start: 0px;
+    flex-direction: row;
+    display: flex;
 }
 
 a {
-    color: white;
     text-decoration: unset;
+    color: white;
 }
 
 button {
@@ -45,58 +74,61 @@ button {
     border: none;
 }
 
-/*                    */
+/*         */
 /*Html Tags*/
-/*                    */
+/*         */
 
-/*                    */
+/*                */
 /*Smooth scrolling*/
-/*                    */
+/*                */
 
-.scroll {
+html {
     scroll-behavior: smooth;
 }
 
-/*                    */
+/*                */
 /*Smooth scrolling*/
-/*                    */
+/*                */
 
-/*                    */
+/*           */
 /*Header work*/
-/*                    */
+/*           */
 
 .links-header {
+    margin-left: 2vw;
     display: flex;
     gap: 3vw;
-    margin-left: 2vw;
 }
 
-/*                    */
-/*Header work*/
-/*                    */
+.hamburger-icon {
+    opacity: 0;
+}
 
-/*                    */
+/*           */
+/*Header work*/
+/*           */
+
+/*                   */
 /*Landing page design*/
-/*                    */
+/*                   */
 
 .introduction-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0px 6vw;
-    height: 80vh;
 }
 
 .introduction-container1 {
-    display: flex;
     align-items: center;
     position: inherit;
+    display: flex;
     bottom: 10px;
 }
 
 .landing-page {
-    display: flex;
     justify-content: center;
+    display: flex;
 }
 
 .landing-page h2 {
@@ -104,9 +136,9 @@ button {
 }
 
 .introductie-naam {
-    display: flex;
-    font-size: 7vh;
     font-weight: 500;
+    font-size: 7vh;
+    display: flex;
     margin: 0px;
 }
 
@@ -124,6 +156,7 @@ button {
     font-size: 25px;
 }
 
+/* Gives the link a gradient colour for visibility */
 .view-my-work {
     background: linear-gradient(80deg, rgba(92, 141, 255, 1) 0%, rgba(145, 10, 255, 1) 50%, rgba(187, 0, 255, 1) 100%);
     padding: 20px 30px;
@@ -132,8 +165,8 @@ button {
 
 .get-in-touch {
     border: solid 1px #3B3B3B;
-    padding: 19px 29px;
     border-radius: 10px;
+    padding: 19px 29px;
 }
 
 .landing-page-links {
@@ -142,20 +175,19 @@ button {
     gap: 20px;
 }
 
-/*                    */
+/*                   */
 /*Landing page design*/
-/*                    */
+/*                   */
 
 /*                    */
 /*About me page design*/
 /*                    */
 
 .about-me-page-container {
-    display: flex;
     justify-content: center;
-    margin: 0px 20vw;
     align-items: center;
-    height: 80vh;
+    margin: 0px 20vw;
+    display: flex;
 }
 
 .about-me-title {
@@ -169,21 +201,23 @@ button {
 }
 
 .about-me-blocks {
-    display: flex;
     justify-content: space-between;
+    display: flex;
+    gap: 1.5vw;
 }
 
 .block-image {
     width: 30px;
 }
 
+/* Shapes the content into a horizontical rectangle with round corners */
 .block {
-    display: flex;
-    width: 11.5vw;
-    padding: 15px 15px;
     border: solid 1px #3B3B3B;
     flex-direction: column;
     border-radius: 15px;
+    padding: 15px 15px;
+    width: 11.5vw;
+    display: flex;
 }
 
 .blocks {
@@ -212,29 +246,29 @@ button {
 /*Selected work design*/
 /*                    */
 .selected-work-title {
-    font-size: 60px;
-    font-weight: 500;
     color: #51a0e0;
+    font-weight: 500;
+    font-size: 60px;
 }
 
+/* Centers the work and aligns it to the middle of the section */
 .selected-work-section {
-    display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
-    height: 150vh;
     align-items: center;
+    display: flex;
+    padding: 10px;
 }
 
 .selected-work-container {
-    display: flex;
     flex-direction: column;
+    display: flex;
     width: 70vw;
 }
 
 .skills-tab {
-    display: flex;
     justify-content: space-between;
+    display: flex;
 }
 
 .tab-content {
@@ -242,17 +276,13 @@ button {
     width: 80vw;
 }
 
+/* Gives shape to the content within to a small horizontical rectangle with round corners */
 .skills-block {
     border: 1px solid #3B3B3B;
     background-color: #1A1A1A;
-    width: 50vw;
-    padding: 1vw;
     border-radius: 15px;
-}
-
-.skills {
-    display: flex;
-    gap: 1vw;
+    padding: 1vw;
+    width: 20vw;
 }
 
 .skills-images {
@@ -264,23 +294,25 @@ button {
     font-weight: 500;
 }
 
+/* Shapes the content to a horizontical rectangle with round corners */
 .experience-content {
-    display: flex;
     background-color: #1A1A1A;
     border: 1px solid #3B3B3B;
     border-radius: 15px;
     padding: 20px;
-    flex-direction: column;
+    margin-bottom: 1vh;
 }
 
+/* Shapes the content to a horizontical rectangle with round corners */
 .project-content {
-    display: flex;
+    justify-content: space-between;
     background-color: #1A1A1A;
     border: 1px solid #3B3B3B;
     border-radius: 15px;
-    padding: 20px;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 1vh;
+    padding: 20px;
+    display: flex;
 }
 
 .experience-content-margin {
@@ -306,7 +338,7 @@ button {
     margin-right: 2vw;
 }
 
-/* Style the tab */
+/* Styles the tab */
 .tab {
     display: flex;
     overflow: hidden;
@@ -317,6 +349,7 @@ button {
     margin-bottom: 10px;
 }
 
+/* Gives the tab a faint color of grey when hovered over */
 .tablinks {
     color: #B3B3B3;
     font-weight: 500;
@@ -326,7 +359,7 @@ button {
     border-radius: 15px;
 }
 
-/* Style the buttons that are used to open the tab content */
+/* Styles the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
     float: left;
@@ -335,13 +368,13 @@ button {
     transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
+/* Changes background color of buttons on hover */
 .tab button:hover {
     background-color: #242424;
     color: white;
 }
 
-/* Create an active/current tablink class */
+/* Creates an active/current tablink class */
 .tab button.active {
     background: linear-gradient(80deg, rgba(92, 141, 255, 1) 0%, rgba(145, 10, 255, 1) 50%, rgba(187, 0, 255, 1) 100%);
 }
@@ -350,22 +383,21 @@ button {
 /*Selected work design*/
 /*                    */
 
-/*                    */
+/*              */
 /*Contact design*/
-/*                    */
+/*              */
 
 .contact-section {
-    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 60vh;
+    display: flex;
 }
 
 .contact-title {
-    font-size: 60px;
-    font-weight: 500;
     color: #51a0e0;
+    font-weight: 500;
+    font-size: 60px;
 }
 
 .contact-paragraph {
@@ -373,64 +405,126 @@ button {
 }
 
 .contact-title-container {
-    display: flex;
     flex-direction: column;
     max-width: 50vw;
+    display: flex;
 }
 
+/* Shapes the content to a horizontical rectangle with round corners */
 .contact-email-container {
-    display: flex;
-    align-items: center;
     outline: solid 1px #3B3B3B;
     background-color: #1A1A1A;
-    padding: 10px 20px;
+    align-items: center;
     border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
     width: 70vw;
     gap: 10px;
 }
 
 .contact-email-container h1 {
-    font-size: 20px;
     font-weight: 400;
+    font-size: 20px;
 }
 
 .contact-images {
-    width: 25px;
     height: 25px;
+    width: 25px;
 }
 
 .contact-apps {
-    font-size: 15px;
     font-weight: 400;
+    font-size: 15px;
 }
 
+/* Shapes the content to a horizontical rectangle with round corners */
 .contact-links {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #1A1A1A;
-    width: 20vw;
-    padding: 10px;
     outline: solid 1px #3B3B3B;
+    background-color: #1A1A1A;
     border-radius: 15px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    width: 20vw;
+    gap: 10px;
 }
 
 .contact-links-container {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
     position: relative;
+    display: flex;
     top: 20px;
 }
 
-/*                    */
+/*              */
 /*Contact design*/
-/*                    */
+/*              */
 
-/*                    */
+/*             */
+/*Footer design*/
+/*             */
+
+.footer-container {
+    border-top: solid 1px #3B3B3B;
+    background-color: #0F0F0F;
+    padding: 5vw 10vw;
+}
+
+.footer-content {
+    justify-content: space-between;
+    height: fit-content;
+    display: flex;
+}
+
+.footer-block {
+    flex-direction: column;
+    font-size: 1vw;
+    display: flex;
+}
+
+.links-footer {
+    flex-direction: column;
+    display: flex;
+    gap: 1vh;
+}
+
+.footer-name {
+    color: #51a0e0;
+    font-size: 2vh;
+}
+
+.footer-paragraph {
+    max-width: 300px;
+}
+
+.footer-subtitle {
+    font-size: 2vh;
+}
+
+.footer-ending {
+    border-top: solid 1px #3B3B3B;
+    margin-top: 2vw;
+    display: flex;
+}
+
+.footer-container a {
+    color: #B3B3B3;
+}
+
+.footer-container p {
+    color: #B3B3B3;
+}
+
+/*             */
+/*Footer design*/
+/*             */
+
+/*              */
 /*Media Queries*/
-/*                    */
+/*              */
 
 @media screen and (max-width: 600px) {
+    /* Downsizes the content to fit mobile screens */
     .about-me-page-container {
         margin: 0px 6vw;
     }
@@ -449,12 +543,71 @@ button {
     }
 
     .skills-block {
-        display: flex;
         flex-direction: column;
+        display: flex;
         padding: 15px;
+        width: unset;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .footer-block {
+        font-size: 3vw;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        position: relative;
+        top: 10vh;
+    }
+
+    .hamburger-icon {
+        opacity: 1;
+        font-size: 5vw;
+    }
+
+    .links-container:hover .links-header {
+        opacity: 1;
+    }
+
+    .links-header a {
+        text-decoration: none;
+        padding: 1vw 3vw;
+        display: block;
+        color: white;
+    }
+
+    /* Changes color when selected */
+    .links-header a:hover {
+        background: #242424;
+    }
+
+    /* Reveals a menu with section links */
+    .links-header {
+        outline: solid 1px #374151;
+        transform: translateY(-10px);
+        flex-direction: column;
+        background: #0F0F0F;
+        pointer-events: auto;
+        transition: all 0.3s;
+        border-radius: 2vw;
+        opacity: 0;
+    }
+
+    .links-container {
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        display: flex;
+        top: 20vw;
     }
 }
 
-/*                    */
+/*             */
 /*Media Queries*/
-/*                    */
+/*             */
