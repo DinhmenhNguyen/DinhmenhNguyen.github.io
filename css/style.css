@@ -4,9 +4,7 @@
 
 /* Makes the scrolling snap to the next section */
 html {
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    overflow-y: scroll;
     height: 100vh;
     height: 100%;
     margin: 0;
@@ -14,7 +12,6 @@ html {
 
 /* Stops the snap scroll at each section before going to the next */
 section {
-    scroll-snap-align: start;
     justify-content: center;
     display: flex;
     height: 100vh;
@@ -225,6 +222,12 @@ html {
     gap: 1.5vw;
 }
 
+.block:hover {
+    background-color: #242424;
+    box-shadow: #3B3B3B 0px 0px 10px;
+    transition: 0.3s;
+}
+
 .block h1 {
     font-size: 15px;
     font-weight: 300;
@@ -285,6 +288,12 @@ html {
     width: 20vw;
 }
 
+.skills-block:hover {
+    background-color: #242424;
+    box-shadow: #3B3B3B 0px 0px 10px;
+    transition: 0.3s;
+}
+
 .skills-images {
     width: 35px;
 }
@@ -303,6 +312,12 @@ html {
     margin-bottom: 1vh;
 }
 
+.experience-content:hover {
+    background-color: #242424;
+    box-shadow: #3B3B3B 0px 0px 10px;
+    transition: 0.3s;
+}
+
 /* Shapes the content to a horizontical rectangle with round corners */
 .project-content {
     justify-content: space-between;
@@ -313,6 +328,12 @@ html {
     margin-bottom: 1vh;
     padding: 20px;
     display: flex;
+}
+
+.project-content:hover {
+    background-color: #242424;
+    box-shadow: #3B3B3B 0px 0px 10px;
+    transition: 0.3s;
 }
 
 .experience-content-margin {
@@ -450,7 +471,7 @@ html {
 }
 
 .contact-links-container {
-    justify-content: space-between ;
+    justify-content: space-between;
     position: relative;
     display: flex;
     top: 20px;
@@ -524,6 +545,7 @@ html {
 /*              */
 
 @media screen and (max-width: 600px) {
+
     /* Downsizes the content to fit mobile screens */
     .about-me-page-container {
         margin: 0px 6vw;
