@@ -5,6 +5,7 @@
 /* Makes the scrolling snap to the next section */
 html {
     scroll-behavior: smooth;
+    cursor: crosshair;
     height: 100vh;
     height: 100%;
     margin: 0;
@@ -25,7 +26,7 @@ body {
 }
 
 main {
-    margin: 10vw;
+    margin: 0vw 10vw 10vw 10vw;
 }
 
 /* Makes the header stay on the top of the screen and visible */
@@ -75,18 +76,6 @@ button {
 /*Html Tags*/
 /*         */
 
-/*                */
-/*Smooth scrolling*/
-/*                */
-
-html {
-    scroll-behavior: smooth;
-}
-
-/*                */
-/*Smooth scrolling*/
-/*                */
-
 /*           */
 /*Header work*/
 /*           */
@@ -95,6 +84,10 @@ html {
     margin-left: 2vw;
     display: flex;
     gap: 3vw;
+}
+
+.links-header a:hover {
+    text-shadow: white 0px 0px 10px;
 }
 
 .hamburger-icon {
@@ -110,10 +103,10 @@ html {
 /*                   */
 
 .introduction-container {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0px 6vw;
+    display: flex;
 }
 
 .introduction-container1 {
@@ -121,11 +114,6 @@ html {
     position: inherit;
     display: flex;
     bottom: 10px;
-}
-
-.landing-page {
-    justify-content: center;
-    display: flex;
 }
 
 .landing-page h2 {
@@ -144,9 +132,9 @@ html {
 }
 
 .hello-im {
-    font-size: 15px;
     font-weight: 400;
     color: #51a0e0;
+    font-size: 15px;
 }
 
 .introductie-about-me {
@@ -156,19 +144,28 @@ html {
 /* Gives the link a gradient colour for visibility */
 .view-my-work {
     background: linear-gradient(80deg, rgba(92, 141, 255, 1) 0%, rgba(145, 10, 255, 1) 50%, rgba(187, 0, 255, 1) 100%);
-    padding: 20px 30px;
     border-radius: 10px;
+    padding: 2vh;
+}
+
+.view-my-work:hover {
+    box-shadow: gray 0px 0px 10px
+}
+
+.get-in-touch:hover {
+    box-shadow: gray 0px 0px 10px
 }
 
 .get-in-touch {
     border: solid 1px #3B3B3B;
     border-radius: 10px;
-    padding: 19px 29px;
+    padding: 2vh;
 }
 
 .landing-page-links {
-    display: flex;
     align-items: center;
+    margin-top: 10px;
+    display: flex;
     gap: 20px;
 }
 
@@ -223,20 +220,20 @@ html {
 }
 
 .block:hover {
-    background-color: #242424;
     box-shadow: #3B3B3B 0px 0px 10px;
+    background-color: #242424;
     transition: 0.3s;
 }
 
-.block h1 {
-    font-size: 15px;
-    font-weight: 300;
+.block h2 {
+    font-size: 18px;
+    font-weight: 400;
     margin: 7px 0px;
 }
 
 .block p {
-    font: 25px;
     margin: 5px 0px;
+    font: 25px;
 }
 
 /*                    */
@@ -288,9 +285,10 @@ html {
     width: 20vw;
 }
 
+/*When hovered it glows light*/
 .skills-block:hover {
-    background-color: #242424;
     box-shadow: #3B3B3B 0px 0px 10px;
+    background-color: #242424;
     transition: 0.3s;
 }
 
@@ -299,8 +297,8 @@ html {
 }
 
 .skills-subtitles {
-    font-size: 20px;
     font-weight: 500;
+    font-size: 20px;
 }
 
 /* Shapes the content to a horizontical rectangle with round corners */
@@ -308,13 +306,14 @@ html {
     background-color: #1A1A1A;
     border: 1px solid #3B3B3B;
     border-radius: 15px;
-    padding: 20px;
     margin-bottom: 1vh;
+    padding: 20px;
 }
 
+/*When hovered it glows light*/
 .experience-content:hover {
-    background-color: #242424;
     box-shadow: #3B3B3B 0px 0px 10px;
+    background-color: #242424;
     transition: 0.3s;
 }
 
@@ -330,9 +329,10 @@ html {
     display: flex;
 }
 
+/*When hovered it glows light*/
 .project-content:hover {
-    background-color: #242424;
     box-shadow: #3B3B3B 0px 0px 10px;
+    background-color: #242424;
     transition: 0.3s;
 }
 
@@ -341,8 +341,8 @@ html {
 }
 
 .title-experience {
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .paragraph-experience {
@@ -361,35 +361,34 @@ html {
 
 /* Styles the tab */
 .tab {
-    display: flex;
-    overflow: hidden;
+    justify-content: space-between;
     border: 1px solid #3B3B3B;
     background-color: #1A1A1A;
-    justify-content: space-between;
     border-radius: 15px;
     margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
 }
 
-/* Gives the tab a faint color of grey when hovered over */
 .tablinks {
-    color: #B3B3B3;
+    border-radius: 15px;
     font-weight: 500;
+    color: #B3B3B3;
     font-size: 15px;
     width: 50vw;
     margin: 7px;
-    border-radius: 15px;
 }
 
 /* Styles the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
-    float: left;
-    cursor: pointer;
     padding: 15px 1vw;
     transition: 0.3s;
+    cursor: pointer;
+    float: left;
 }
 
-/* Changes background color of buttons on hover */
+/*When hovered it glows light*/
 .tab button:hover {
     background-color: #242424;
     color: white;
@@ -443,7 +442,7 @@ html {
     gap: 10px;
 }
 
-.contact-email-container h1 {
+.contact-email-container h2 {
     font-weight: 400;
     font-size: 20px;
 }
@@ -455,7 +454,7 @@ html {
 
 .contact-apps {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 /* Shapes the content to a horizontical rectangle with round corners */
@@ -475,6 +474,21 @@ html {
     position: relative;
     display: flex;
     top: 20px;
+}
+
+/*When hovered it glows light*/
+.contact-email-container:hover {
+    box-shadow: #3B3B3B 0px 0px 10px;
+    background-color: #242424;
+    transition: 0.3s;
+}
+
+/*When hovered it glows light*/
+.contact-links:hover {
+    box-shadow: #3B3B3B 0px 0px 10px;
+    background-color: #242424;
+    border-radius: 15px;
+    transition: 0.3s;
 }
 
 /*              */
@@ -536,6 +550,14 @@ html {
     color: #B3B3B3;
 }
 
+.links-footer a:hover {
+    text-shadow: white 0px 0px 10px;
+}
+
+.footer-email:hover {
+    text-shadow: white 0px 0px 10px;
+}
+
 /*             */
 /*Footer design*/
 /*             */
@@ -588,11 +610,13 @@ html {
         top: 10vh;
     }
 
+    /*Reveals the content*/
     .hamburger-icon {
         opacity: 1;
         font-size: 5vw;
     }
 
+    /*Reveals the content*/
     .links-container:hover .links-header {
         opacity: 1;
     }
@@ -604,15 +628,14 @@ html {
         color: white;
     }
 
-    /* Changes color when selected */
+    /*When hovered it highlights the content*/
     .links-header a:hover {
         background: #242424;
     }
 
-    /* Reveals a menu with section links */
+    /*Shapes the content*/
     .links-header {
         outline: solid 1px #374151;
-        transform: translateY(-10px);
         flex-direction: column;
         background: #0F0F0F;
         pointer-events: auto;
