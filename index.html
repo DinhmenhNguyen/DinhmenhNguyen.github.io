@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- This is the start of my header -->
     <header>
         <h1 class="initials-header">DN</h1>
         <nav class="links-container">
@@ -35,194 +36,200 @@
             </ul>
         </nav>
     </header>
+    <!-- This is the end of my header -->
 
     <main>
-        <div>
-            <section id="landing-page-id">
-                <div class="introduction-container">
-                    <div class="introduction-container1">
-                        <img class="blue-star" src="Images/Blue-Star.png" alt="An image of a blue star">
-                        <h2 class="hello-im">Hello, I'm</h2>
+        <!-- This is the start of my Landing page -->
+        <section id="landing-page-id">
+            <div class="introduction-container">
+                <div class="introduction-container1">
+                    <img class="blue-star" src="Images/Blue-Star.png" alt="An image of a blue star">
+                    <h2 class="hello-im">Hello, I'm</h2>
+                </div>
+                <div>
+                    <h1 class="introductie-naam">Dinhmenh Nguyen</h1>
+                    <p class="introductie-about-me">Software developer student & Piano musician </p>
+                </div>
+                <div class="landing-page-links">
+                    <div>
+                        <a class="view-my-work" href="#selected-work-id">View my work</a>
                     </div>
                     <div>
-                        <h1 class="introductie-naam">Dinhmenh Nguyen</h1>
-                        <p class="introductie-about-me">Software developer student & Piano musician </p>
+                        <a class="get-in-touch" href="#contact-id">Get in touch ➔</a>
                     </div>
-                    <div class="landing-page-links">
-                        <div>
-                            <a class="view-my-work" href="#selected-work-id">View my work</a>
+                </div>
+            </div>
+        </section>
+        <!-- This is the end of my Landing page -->
+
+        <!-- This is the start of my About me page -->
+        <section id="about-me-id" class="about-me-page-container">
+            <div>
+                <div>
+                    <h1 class="about-me-title">About me</h1>
+                </div>
+                <div class="about-me-paragraph">
+                    <p>Im a person who loves taking on difficult challenges, learning difficult things and solving
+                        them. Although busy most of the time I do take days off where I freely walk in the park or
+                        go to the gym</p>
+                    <p>Im best at creating but fall off when it comes to optimizing or increasing the efficiency of
+                        things. although its a weakpoint im definitely not bad at it.</p>
+                </div>
+                <div class="about-me-blocks">
+                    <!-- In de paragraaf van de blokken -->
+                    <div class="blocks">
+                        <div class="block">
+                            <img class="block-image" src="Images/art.png" alt="An image of a painters paintset">
+                            <h2>Design</h2>
+                            <p>• HTML</p>
+                            <p>• CSS</p>
                         </div>
-                        <div>
-                            <a class="get-in-touch" href="#contact-id">Get in touch ➔</a>
+                        <div class="block">
+                            <img class="block-image" src="Images/left-right.png"
+                                alt="An image of two arrows pointing opposite directions">
+                            <h2>Development</h2>
+                            <p>• Java</p>
+                            <p>• Javascript</p>
+                        </div>
+                    </div>
+                    <div class="blocks">
+                        <div class="block">
+                            <img class="block-image" src="Images/lightning.png" alt="An image of a lightning bolt">
+                            <h2>Tools</h2>
+                            <p>• Figma</p>
+                            <p>• Trello</p>
+                        </div>
+                        <div class="block">
+                            <img class="block-image" src="Images/user.png" alt="An image of two people">
+                            <h2>Other</h2>
+                            <p>• UI/UX</p>
+                            <p>• User Research</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <!-- This is the end of my About me page -->
 
-            <section id="about-me-id" class="about-me-page-container">
-                <div>
-                    <div>
-                        <h1 class="about-me-title">About me</h1>
-                    </div>
-                    <div class="about-me-paragraph">
-                        <p>Im a person who loves taking on difficult challenges, learning difficult things and solving
-                            them. Although busy most of the time I do take days off where I freely walk in the park or
-                            go to the gym</p>
-                        <p>Im best at creating but fall off when it comes to optimizing or increasing the efficiency of
-                            things. although its a weakpoint im definitely not bad at it.</p>
-                    </div>
-                    <div class="about-me-blocks">
-                        <div class="blocks">
-                            <div class="block">
-                                <img class="block-image" src="Images/art.png" alt="An image of a painters paintset">
-                                <h2>Design</h2>
-                                <p>• HTML</p>
-                                <p>• CSS</p>
-                            </div>
-                            <div class="block">
-                                <img class="block-image" src="Images/left-right.png"
-                                    alt="An image of two arrows pointing opposite directions">
-                                <h2>Development</h2>
-                                <p>• Java</p>
-                                <p>• Javascript</p>
-                            </div>
+        <!-- This is the start of my Skills, Experience, Projects page -->
+        <section id="selected-work-id" class="selected-work-section">
+            <h1 class="selected-work-title">Selected work</h1>
+
+            <div class="selected-work-container">
+                <div class="tab">
+                    <button class="tablinks" onclick="skills(event, 'Skills')">Skills</button>
+                    <button class="tablinks" onclick="skills(event, 'Experience')">Experience</button>
+                    <button class="tablinks" onclick="skills(event, 'Projects')">Projects</button>
+                </div>
+
+                <div id="Skills" class="tabcontent">
+                    <div class="skills-tab">
+                        <div class="skills-block">
+                            <img class="skills-images" src="Images/front-end-icon.png"
+                                alt="An image of a left arrows slash and right arrow">
+                            <h3 class="skills-subtitles">Front end</h3>
+                            <p>• HTML, CSS</p>
                         </div>
-                        <div class="blocks">
-                            <div class="block">
-                                <img class="block-image" src="Images/lightning.png" alt="An image of a lightning bolt">
-                                <h2>Tools</h2>
-                                <p>• Figma</p>
-                                <p>• Trello</p>
-                            </div>
-                            <div class="block">
-                                <img class="block-image" src="Images/user.png" alt="An image of two people">
-                                <h2>Other</h2>
-                                <p>• UI/UX</p>
-                                <p>• User Research</p>
-                            </div>
+                        <div class="skills-block">
+                            <img class="skills-images" src="Images/graduation.png" alt="An image of a graduation hat">
+                            <h3 class="skills-subtitles">Design</h3>
+                            <p>• Figma</p>
+                        </div>
+                        <div class="skills-block">
+                            <img class="skills-images" src="Images/suitcase.png" alt="An image of a suitcase">
+                            <h3 class="skills-subtitles">Back end</h3>
+                            <p>• Java</p>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section id="selected-work-id" class="selected-work-section">
-                <h1 class="selected-work-title">Selected work</h1>
-
-                <div class="selected-work-container">
-                    <div class="tab">
-                        <button class="tablinks" onclick="skills(event, 'Skills')">Skills</button>
-                        <button class="tablinks" onclick="skills(event, 'Experience')">Experience</button>
-                        <button class="tablinks" onclick="skills(event, 'Projects')">Projects</button>
-                    </div>
-
-                    <div id="Skills" class="tabcontent">
-                        <div class="skills-tab">
-                            <div class="skills-block">
-                                <img class="skills-images" src="Images/front-end-icon.png"
-                                    alt="An image of a left arrows slash and right arrow">
-                                <h3 class="skills-subtitles">Front end</h3>
-                                <p>• HTML, CSS</p>
-                            </div>
-                            <div class="skills-block">
-                                <img class="skills-images" src="Images/graduation.png"
-                                    alt="An image of a graduation hat">
-                                <h3 class="skills-subtitles">Design</h3>
-                                <p>• Figma</p>
-                            </div>
-                            <div class="skills-block">
-                                <img class="skills-images" src="Images/suitcase.png" alt="An image of a suitcase">
-                                <h3 class="skills-subtitles">Back end</h3>
-                                <p>• Java</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="Experience" class="tabcontent">
-                        <div class="experience-content">
-                            <h3 class="experience-content-margin title-experience">Software Developer Student year 1
-                                Period
-                                1
-                            </h3>
-                            <h4 class="experience-content-margin technovium">Technovium</h4>
-                            <p class="experience-content-margin paragraph-experience">Learning basic coding, Java and
-                                HTML,
-                                CSS
-                            </p>
-                        </div>
-                        <div class="experience-content">
-                            <h3 class="experience-content-margin title-experience">Software Developer Student year 1
-                                Period
-                                2
-                            </h3>
-                            <h4 class="experience-content-margin technovium">Technovium</h4>
-                            <p class="experience-content-margin paragraph-experience">Learning optimilisation of Java
-                                and
-                                HTML, CSS and a little Javascript
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="Projects" class="tabcontent">
-                        <div class="project-content">
-                            <div>
-                                <h3>Project 1</h3>
-                                <p>A exercise to practice css</p>
-                            </div>
-                            <img class="project-images" src="Images/flex-blokken-opdracht.png"
-                                alt="An image of my first project">
-                        </div>
-                        <div class="project-content">
-                            <div>
-                                <h3>Project 2</h3>
-                                <p>A project to recreate the PinkGoose website</p>
-                            </div>
-                            <img class="project-images" src="Images/gamebox.png"
-                                alt="An image of my second project called pinkgoose">
-                        </div>
-                    </div>
-            </section>
-
-            <section id="contact-id" class="contact-section">
-                <div>
-                    <div class="contact-title-container">
-                        <h1 class="contact-title">Let's work together</h1>
-                        <p class="contact-paragraph">Have a project in mind? I'd love to hear about it. Get in touch and
-                            let's create something great.
+                <div id="Experience" class="tabcontent">
+                    <div class="experience-content">
+                        <h3 class="experience-content-margin title-experience">Software Developer Student year 1
+                            Period
+                            1
+                        </h3>
+                        <h4 class="experience-content-margin technovium">Technovium</h4>
+                        <p class="experience-content-margin paragraph-experience">Learning basic coding, Java and
+                            HTML,
+                            CSS
                         </p>
                     </div>
-                    <div>
-                        <a href="mailto:1213821@student.roc-nijmegen.nl" class="contact-email-container">
-                            <img class="contact-images" src="Images/email.png" alt="An image of a mail">
-                            <h2>1213821@student.roc-nijmegen.nl</h2>
-                        </a>
-                        <div class="contact-links-container">
-                            <div>
-                                <a class="contact-links" href="https://www.linkedin.com/in/d-n-a4781b3a3">
-                                    <img class="contact-images" src="Images/linkedin.png"
-                                        alt="An image of LinkedIn's logo">
-                                    <h3 class="contact-apps">LinkedIn</h3>
-                                </a>
-                            </div>
-                            <div>
-                                <a class="contact-links" href="https://github.com/DinhmenhNguyen">
-                                    <img class="contact-images" src="Images/github.png" alt="An image of Github's logo">
-                                    <h3 class="contact-apps">GitHub</h3>
-                                </a>
-                            </div>
-                            <div>
-                                <a class="contact-links" href="https://x.com/bMtAP9tziF54502">
-                                    <img class="contact-images" src="Images/twitter.png"
-                                        alt="An image of Twitter's logo">
-                                    <h3 class="contact-apps">Twitter</h3>
-                                </a>
-                            </div>
+                    <div class="experience-content">
+                        <h3 class="experience-content-margin title-experience">Software Developer Student year 1
+                            Period
+                            2
+                        </h3>
+                        <h4 class="experience-content-margin technovium">Technovium</h4>
+                        <p class="experience-content-margin paragraph-experience">Learning optimilisation of Java
+                            and
+                            HTML, CSS and a little Javascript
+                        </p>
+                    </div>
+                </div>
+
+                <div id="Projects" class="tabcontent">
+                    <div class="project-content">
+                        <div>
+                            <h3>Project 1</h3>
+                            <p>A exercise to practice css</p>
+                        </div>
+                        <img class="project-images" src="Images/flex-blokken-opdracht.png"
+                            alt="An image of my first project">
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3>Project 2</h3>
+                            <p>A project to recreate the PinkGoose website</p>
+                        </div>
+                        <img class="project-images" src="Images/gamebox.png"
+                            alt="An image of my second project called pinkgoose">
+                    </div>
+                </div>
+        </section>
+        <!-- This is the end of my Skills, Experience, Projects page -->
+
+        <!-- This is the start of my Contact page -->
+        <section id="contact-id" class="contact-section">
+            <div>
+                <div class="contact-title-container">
+                    <h1 class="contact-title">Let's work together</h1>
+                    <p class="contact-paragraph">Have a project in mind? I'd love to hear about it. Get in touch and
+                        let's create something great.
+                    </p>
+                </div>
+                <div>
+                    <a href="mailto:1213821@student.roc-nijmegen.nl" class="contact-email-container">
+                        <img class="contact-images" src="Images/email.png" alt="An image of a mail">
+                        <h2>1213821@student.roc-nijmegen.nl</h2>
+                    </a>
+                    <div class="contact-links-container">
+                        <div>
+                            <a class="contact-links" href="https://www.linkedin.com/in/d-n-a4781b3a3">
+                                <img class="contact-images" src="Images/linkedin.png" alt="An image of LinkedIn's logo">
+                                <h3 class="contact-apps">LinkedIn</h3>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="contact-links" href="https://github.com/DinhmenhNguyen">
+                                <img class="contact-images" src="Images/github.png" alt="An image of Github's logo">
+                                <h3 class="contact-apps">GitHub</h3>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="contact-links" href="https://x.com/bMtAP9tziF54502">
+                                <img class="contact-images" src="Images/twitter.png" alt="An image of Twitter's logo">
+                                <h3 class="contact-apps">Twitter</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <!-- This is the end of my Contact page -->
     </main>
 
+    <!-- This is the start of my Footer -->
     <footer>
         <div class="footer-container">
             <section class="footer-content">
@@ -276,6 +283,7 @@
             </div>
         </div>
     </footer>
+    <!-- This is the end of my Footer -->
 
 </body>
 
